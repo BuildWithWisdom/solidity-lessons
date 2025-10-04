@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "range",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					}
+				],
+				"name": "sumAll",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"youtube/loop.sol": "Loop"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"youtube/loop.sol": {
+			"keccak256": "0xd50ffa73cd54e237925989e24287956f353586ec34c691113eac1f70224ed77a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2808a9620795f2f6a5994ba8e88f7c50c1a129feebe05e2a62b087892e701aae",
+				"dweb:/ipfs/QmPS3Kqr1fh634ezwJuqMGXWUrj9fuLFWg7fFex2C743w8"
+			]
+		}
+	},
+	"version": 1
+}
