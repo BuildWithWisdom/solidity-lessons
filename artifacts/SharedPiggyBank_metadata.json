@@ -51,7 +51,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "withdrawAmount",
+						"type": "uint256"
+					}
+				],
 				"name": "withdrawMyFunds",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -86,11 +92,11 @@
 	},
 	"sources": {
 		"piggybank/piggybank.sol": {
-			"keccak256": "0x24ca4d03282c1d596efb04d7a6663ba43f09fa018faa99710cc5d883042ca746",
+			"keccak256": "0x0ca4e85c1ba51ae773177a93a4a5bf27047882730a538fb702315931608481ff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://40a78319eeba9ff021c40ab4efb5fa759985da93e5ea0d7e39c3d0812d73d463",
-				"dweb:/ipfs/QmbitUBSW7hvc149bHEJCf8TJtsYAd2x6tNEnKE3xBtVEn"
+				"bzz-raw://d9cad33aecef5c99ae87e8c0e95dacef09c46efe7b06efbe77cdcf1401af0d60",
+				"dweb:/ipfs/QmVvQWYALWHYR1Y8CSgA6UxoqY9BuRNoQc8qNtcR7oGBVP"
 			]
 		}
 	},

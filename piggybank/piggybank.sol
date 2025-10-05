@@ -17,14 +17,20 @@ contract SharedPiggyBank {
         return balances[msg.sender];
     }
 
-    function withdrawMyFunds() public {
+    modifier withdrawerLimit() {
         uint amount = balances[msg.sender];
-        require(amount > 0, "No balance to withdraw");
-        balances[msg.sender] = 0;
-        payable (msg.sender).transfer(amount);
+        require(amount >= 0.01 ether, "You need more balance to withdraw");
+        _;
     }
 
-    function withdraw() public{
+    function withdrawMyFunds(uint withdrawAmount) public withdrawerLimit{
+        uint totalAmount = balances[msg.sender];
+        require(withdrawAmount <= totalAmount, "No balance to withdraw");
+        balances[msg.sender] = totalAmount - withdrawAmount;
+        payable (msg.sender).transfer(withdrawAmount);
+    }
+
+    function withdraw() public {
         require(msg.sender == owner, "Only owner can withdraw");
         payable(owner).transfer(address(this).balance);
     }
